@@ -1,0 +1,3 @@
+@props(['books' =>$books])
+
+
