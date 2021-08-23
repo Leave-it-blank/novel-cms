@@ -40,3 +40,22 @@ and cd Kawai
 then you run composer install.
 
 now u get errors so u use these noob,
+
+composer update --ignore-platform-reqs
+
+run this to make composer faster
+
+sudo apt-get install php-curl
+
+
+Problem 1
+    - phpoffice/phpspreadsheet is locked to version 1.18.0 and an update of this package was not requested.
+    - phpoffice/phpspreadsheet 1.18.0 requires ext-gd * -> it is missing from your system. Install or enable PHP's gd extension.
+problem 2 , all mostly solved below.
+Solution
+sudo apt install php-xml
+sudo apt install php8.0-gd
+sudo apt install php8.0-mbstring
+sudo apt install php-zip
+
+solved.
