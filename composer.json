@@ -24,7 +24,7 @@
         "spatie/laravel-medialibrary": "^9.0.0",
         "spatie/laravel-permission": "^4.0",
         "spatie/laravel-searchable": "^1.9",
-        "stidges/laravel-country-flags": "^2.0",
+        "stidges/laravel-country-flags": "^2.0"
     
     },
     "require-dev": {
