@@ -1,0 +1,42 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+<strong>  installing PHP 8.0</strong>
+ apt install software-properties-common
+add-apt-repository ppa:ondrej/php
+apt update
+apt upgrade
+Now you can install PHP 8:
+apt install php8.0-fpm
+To test if you have PHP 8:
+php -v
+To check if the PHP-fpm is up and running:
+systemctl status php8.0-fpm
+Now we can install all PHP dependencies for your Laravel 8 application:
+apt-get install php8.0-mysql php8.0-mbstring php8.0-xml php8.0-bcmath
+
+<strong> install composer now~ </strong>
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+sudo mv composer.phar /usr/local/bin/composer
+
+Install Mysql 
+
+sudo apt install mysql-server
+sudo mysql_secure_installation
+
+Creating db / user
+sudo mysql
+CREATE DATABASE db_laravel8;
+CREATE USER 'userdb'@'localhost' IDENTIFIED BY 'somepassword';
+GRANT ALL PRIVILEGES ON * . * TO 'userdb'@'localhost';
+FLUSH PRIVILEGES;
+
+Now CLone the repo
+
+and cd Kawai
+then you run composer install.
+
+now u get errors so u use these noob,
