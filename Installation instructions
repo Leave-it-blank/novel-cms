@@ -121,3 +121,11 @@ Note this line Creating default alias: default -> lts/* (-> v10.16.3). This indi
 Example to set the default version of node to use when starting a new shell to 10.0.0:
 
 
+random livewire bs 
+
+php artisan livewire:publish
+
+
+
+
+
